@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #343a40;
+}
+
+h2 {
+  color: #495057;
+}
+
+/* Стили для таблицы фильмов */
+.table {
+  background-color: #ffffff;
+}
+
+.table th {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Стили для карточек сравнения фильмов */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Центрирование элементов и отступы */
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+/* Адаптивность: стекировка колонок на малых экранах */
+@media (max-width: 767.98px) {
+  .compare-table-row {
+    flex-direction: column;
+  }
+
+  .compare-table-col {
+    margin-bottom: 2rem;
+  }
+}
